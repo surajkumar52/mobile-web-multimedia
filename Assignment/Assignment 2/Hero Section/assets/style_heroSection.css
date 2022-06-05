@@ -1,0 +1,97 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav_bar{
+    height: 100px;
+    display: flex;
+}
+.brand{
+    font-size: 30px;
+    font-weight: bolder;
+    flex: 2;
+    padding: 30px 22px;
+}
+.right_navbar{
+    flex: 8;
+    padding-top: 40px;
+}
+a{
+    text-decoration: none;
+    font-weight:600;
+    padding: 10px 20px;
+    color: rgb(32, 32, 32);
+    
+}
+.right_navbar .contact{
+    border: 1px solid rgb(173, 171, 171);
+    border-radius: 10px;
+    margin-left: 35%;
+    
+}
+.content_div{
+    display: flex;
+    margin-top: 50px;
+}
+.left_content{
+    flex: 1;
+}
+.right_content{
+    flex: 1;
+    margin: 10px;
+}
+.right_content .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.left_content h1{
+    font-size: 60px;
+    margin: 10px;
+    padding: 10px;
+}
+
+svg{
+    width: 28px;
+    color: rgb(50, 130, 223);
+    margin-right: 20px;
+}
+
+.list{
+    padding: 30px;
+}
+.list h4{
+    font-weight:600;
+}
+
+.list .adj{
+    display: flex;
+    align-items: center;
+}
+
+.enter_section{
+    border: 1px solid rgb(150, 149, 149);
+    border-radius: 7px;
+    width: 450px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.join_btn {
+    text-decoration: none;
+    background-color: hsl(217, 88%, 62%);
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    border-radius: 8px;
+    padding: 10px 20px;
+    
+}
+
+input {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 18px;
+    border:none;
+    outline: none;
+}
