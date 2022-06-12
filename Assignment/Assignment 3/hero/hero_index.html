@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="./assets/css/hero_style.css">
+</head>
+
+<body>
+    <nav id="navigation">
+        <span class="Logo">
+            <h1>Brand</h1>
+        </span>
+        <ul id="nav" class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+
+
+        </ul>
+        <span class="contact-button">
+            <a href="#">Contact Us</a>
+        </span>
+        <img class="menu-icon" src="./assets/uploads/ham_menu.svg" onclick="myFunction()" alt="">
+        <img class="menu-icon-close" src="./assets/uploads/close_icon.png"  alt="">
+    </nav>
+    <!-- Mobile menu -->
+    <div class="mobile-nav">
+        <div class="mobile-menu">
+            <nav class="mobile-links">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <section class="main-content">
+        <div class="left">
+
+            <h1 class="title">Easiest way to create your website.</h1>
+            <div class="info-main">
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>Clean and Simple Layout</p>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>Just Copy Paste Codeing</p>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p>Easy to Use</p>
+                </div>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Enter your email">
+                <a class="join-btn" href="#">Join Us</a>
+            </div>
+        </div>
+        <div class="right">
+            <img class="right-img" src="./assets/uploads/task-hero.png" alt="">
+        </div>
+    </section>
+
+    <script src="./assets/jquery/jquery3.6.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $(".menu-icon").click(function (){
+                $(".mobile-nav").show(300);
+                $(".menu-icon").hide();
+                $(".menu-icon-close").show(100);
+            });
+            $(".menu-icon-close").click(function (){
+                $(".mobile-nav").hide(300);
+                $(".menu-icon").show(100);
+                $(".menu-icon-close").hide(100);
+            });
+        })
+    </script>
+
+</body>
+
+</html>
